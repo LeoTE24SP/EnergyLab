@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyLab - Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mall.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><span class="purple">Energy</span>Lab</a>
+            
+            <button class="hamburger" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">START</a>
+                <a href="shop.html" class="nav-link">PRODUKTER</a>
+                <a href="information.html" class="nav-link active">INFO</a>
+                <a href="omoss.html" class="nav-link">OM OSS</a>
+            </nav>
+            <div class="header-icons">
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="font-size: 3rem; text-align: center; margin-bottom: 40px;">FAQ & <span style="color: var(--color-orange);">VILLKOR</span></h2>
+
+            <div class="faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="faq-item" style="border: 1px solid var(--color-lime); padding: 20px; border-radius: 10px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">LEVERANS</h3>
+                    <p style="color: #999;">Vi skickar alla ordrar som läggs innan kl 14:00 samma dag. Normal leveranstid är 1-2 arbetsdagar. Vi samarbetar med Instabox och PostNord.</p>
+                </div>
+
+                <div class="faq-item" style="border: 1px solid var(--color-purple); padding: 20px; border-radius: 10px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">RETURER</h3>
+                    <p style="color: #999;">Inte nöjd med smaken? Vi erbjuder smakgaranti på alla våra pulverprodukter. Kontakta supporten så löser vi en retur eller ett byte.</p>
+                </div>
+
+                <div class="faq-item" style="border: 1px solid var(--color-orange); padding: 20px; border-radius: 10px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">BETALNING</h3>
+                    <p style="color: #999;">Betala säkert och smidigt med Klarna, Swish eller kort. Alla transaktioner är krypterade.</p>
+                </div>
+
+                <div class="faq-item" style="border: 1px solid white; padding: 20px; border-radius: 10px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">KONTAKT</h3>
+                    <p style="color: #999;">Har du frågor? Maila oss på <strong style="color: white; text-decoration: underline;">support@energylab.se</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; color: #666; font-size: 0.9rem; padding: 40px 0;">
+            &copy; 2026 EnergyLab AB
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

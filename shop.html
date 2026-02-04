@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyLab - Produkter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mall.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo"><span class="purple">Energy</span>Lab</a>
+            
+            <button class="hamburger" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">START</a>
+                <a href="shop.html" class="nav-link active">PRODUKTER</a>
+                <a href="information.html" class="nav-link">INFO</a>
+                <a href="omoss.html" class="nav-link">OM OSS</a>
+            </nav>
+            <div class="header-icons">
+               </div>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="shop-header">
+            <div>
+                <h2 style="font-size: 3rem; font-style: italic;">ALLA <span style="color: var(--color-purple);">PRODUKTER</span></h2>
+                <p style="color: #999;">Bränsle för dina gains.</p>
+            </div>
+        </div>
+
+        <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+            <div class="product-card">
+                <span class="card-tag" style="background: white; color: black; left: 10px; right: auto; top: 10px;">STARK</span>
+                <div class="product-img"> 
+                    <img src="pexels-itslauravillela-31555272.jpg" alt="Pre workout" style="width:10em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title" style="color: var(--color-purple);">NO-XPLODE PWO</h3>
+                    <p class="product-meta">30 Serveringar • Sockerfri</p>
+                    <div class="product-footer">
+                        <span class="price">349 KR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="card-tag" style="background: var(--color-orange); color: black; left: 10px; right: auto; top: 10px;">POPULÄR</span>
+                <div class="product-img"> 
+                    <img src="pexels-krzysztof-biernat-406313862-15120889.jpg" alt="Protein" style="width:8em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title" style="color: var(--color-orange);">WHEY ISOLATE 90</h3>
+                    <p class="product-meta">1kg • Choklad</p>
+                    <div class="product-footer">
+                        <span class="price">449 KR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"> 
+                    <img src="marios-gkortsilas-1PPdOkGO9cg-unsplash.jpg" alt="Kreatin" style="width:10em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">CREATINE MONO</h3>
+                    <p class="product-meta">500g</p>
+                    <div class="product-footer">
+                        <span class="price">199 KR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="card-tag" style="background: var(--color-lime); color: black; left: 10px; right: auto; top: 10px;">NYHET</span>
+                <div class="product-img"> 
+                    <img src="pexels-supliful-13779103.jpg" alt="BCAA" style="width:10em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title" style="color: var(--color-lime);">BCAA ENERGY</h3>
+                    <p class="product-meta">Med Koffein • Päron</p>
+                    <div class="product-footer">
+                        <span class="price">229 KR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"> 
+                    <img src="supliful-supplements-on-demand-E-hOpSZONa0-unsplash.jpg" alt="ZMA" style="width:10em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">ZMA NIGHT</h3>
+                    <p class="product-meta">90 Kapslar • Sömn</p>
+                    <div class="product-footer">
+                        <span class="price">179 KR</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"> 
+                    <img src="ctrl-a-meal-replacement-baCwq7-mZrQ-unsplash.jpg" alt="Shaker" style="width:10em; height:auto; border-radius: 2em">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title" style="color: var(--color-lime);">NEON SHAKER</h3>
+                    <p class="product-meta">700ml • Läckagesäker</p>
+                    <div class="product-footer">
+                        <span class="price">59 KR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; color: #666; font-size: 0.9rem; padding: 40px 0;">
+            &copy; 2026 EnergyLab AB
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
