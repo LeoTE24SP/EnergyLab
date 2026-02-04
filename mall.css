@@ -633,7 +633,7 @@ footer {
         text-align: center;
     }
     
-   
+    /* Centrerar knapparna i hero */
     .btn-group {
         justify-content: center;
     }
